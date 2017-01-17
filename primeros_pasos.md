@@ -121,7 +121,8 @@ En caso de desconocer de qué variables se compone la columa, podemos conocer su
 
 > Ejercicio
 
->Realiza las operaciones anteriores sustituyendo la base de datos de los diferentes estados de EEUU 'state.x77' por
+>Realiza las operaciones anteriores sustituyendo la base de datos de los diferentes estados de EEUU 'state.x77' por iris, una de las bbdd más utilizadas en R para iniciarse.
+
 * ¿Cuántas columnas tiene?
 * ¿Cuál es el nombre de las diferentes variables que se compone?
 * ¿Podríais darme un resumen estadístico de la tabla?
