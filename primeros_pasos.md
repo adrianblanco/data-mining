@@ -119,6 +119,9 @@ En caso de desconocer de qué variables se compone la columna, podemos conocer s
 `colnames(state.x77)`  
 
 
+
+===========
+
 > Ejercicio
 
 >Realiza las operaciones anteriores sustituyendo la base de datos de los diferentes estados de EEUU 'state.x77' por iris, una de las bases de datos más utilizadas en R para iniciarse.
@@ -126,6 +129,9 @@ En caso de desconocer de qué variables se compone la columna, podemos conocer s
 * ¿Cuántas columnas tiene?
 * ¿Cuál es el nombre de las diferentes variables que se compone?
 * ¿Podríais darme un resumen estadístico de la tabla?
+
+===========
+
 
 
 Si recordáis antes hemos visualizado de forma rápida y sencilla los datos de state.x77 con la función plot(). Lo que hemos hecho es mostrar los datos en un scatterplot o gráfico de dispersión. ¿Para qué son útiles este tipo de gráficos en el análisis de datos?
