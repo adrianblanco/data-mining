@@ -68,6 +68,9 @@ Por ejemplo, para tener unas primeras nociones de qué datos contiene la tabla y
 
 `plot(state.x77)`
 
+[scatter]: img/scatter.png "scatter example"
+
+
 Algo más avanzado:
 
 ```
