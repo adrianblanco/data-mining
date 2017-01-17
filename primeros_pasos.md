@@ -8,7 +8,7 @@ Curso 2016-2017
 
 ## ¿Qué es R?
 
-“R es un lengauaje y un entorno de programación para el desarrollo de operaciones estadísticas y visualizaciones"
+“R es un lenguaje y un entorno de programación para el desarrollo de operaciones estadísticas y visualizaciones"
 
 ## Primeros pasos en R
 
@@ -42,7 +42,7 @@ La ayuda de una función en R siempre tiene la misma estructura:
 
 Por defecto R contiene una serie de datasets o conjuntos de datos preinstalados. Durante estos primeros pasos, vamos a trabajar con ellos.
 
-Para ver una lista de los diferentes conjuntos de datos preinsatlados escribe en la consola:
+Para ver una lista de los diferentes conjuntos de datos preinstalados escribe en la consola:
 
 `data()`
 
@@ -56,7 +56,7 @@ En concreto, escribiremos en la consola
 
 `state.x77`
 
-o lo que es lo mismo
+o lo que es lo mismo:
 
 `print(state.x77)`
 
@@ -90,7 +90,7 @@ Cuando los conjuntos de datos contienen cientos o miles de datos, no es operativ
 
 En estos casos, podemos utilizar la función head para visualizar las seis primeras filas de la tabla que estamos analizando.
 
-`head(state.x77)`    # primeras seis filas
+`head(state.x77)`  
 
 Si por defecto el número de filas que nos muestra no es suficiente, hay solución:
 
@@ -98,7 +98,7 @@ Si por defecto el número de filas que nos muestra no es suficiente, hay soluci�
 
 Con la variable ´n´ indicamos el número de filas que queremos mostrar. Ésta nos permite una visión más completa que la disponible por defecto y manejable a su vez.
 
-Por otro lado, si queremos ver las últimas filas de la tabla, utilizaremos la funcón `tail`.
+Por otro lado, si queremos ver las últimas filas de la tabla, utilizaremos la función `tail`.
 
 `tail(state.x77)`
 
@@ -110,24 +110,24 @@ Si queremos conocer el número de filas y columnas, escribimos:
 
 `nrow(state.x77)`
 
- Para conocer el númer de columnas, en cambio, utilizamos la siguiente función:
+ Para conocer el número de columnas, en cambio, utilizamos la siguiente función:
 
 `ncol(state.x77)`
 
-En caso de desconocer de qué variables se compone la columa, podemos conocer sus nombres con `colnames()`
+En caso de desconocer de qué variables se compone la columna, podemos conocer sus nombres con `colnames()`
 
 `colnames(state.x77)`  
 
 
 > Ejercicio
 
->Realiza las operaciones anteriores sustituyendo la base de datos de los diferentes estados de EEUU 'state.x77' por iris, una de las bbdd más utilizadas en R para iniciarse.
+>Realiza las operaciones anteriores sustituyendo la base de datos de los diferentes estados de EEUU 'state.x77' por iris, una de las bases de datos más utilizadas en R para iniciarse.
 
 * ¿Cuántas columnas tiene?
 * ¿Cuál es el nombre de las diferentes variables que se compone?
 * ¿Podríais darme un resumen estadístico de la tabla?
 
 
-Si recordáis antes hemos visualizado de forma rápida y sencillla los datos de state.x77 con la función plot(). Lo que hemos hecho es mostrar los datos en un scatterplot o gráfico de dispersión. ¿Para qué son útiles este tipo de gráficos en el análisis de datos?
+Si recordáis antes hemos visualizado de forma rápida y sencilla los datos de state.x77 con la función plot(). Lo que hemos hecho es mostrar los datos en un scatterplot o gráfico de dispersión. ¿Para qué son útiles este tipo de gráficos en el análisis de datos?
 
-En primer lugar, nos ayudan a ver tendencias y patrones, así como a identificar los outliers o valores atípicos de un conjunto de datos. Veamoslo en un ejemplo práctico en el siguiente [vídeo](https://www.youtube.com/watch?v=jbkSRLYSojo).
+En primer lugar, nos ayudan a ver tendencias y patrones, así como a identificar los outliers o valores atípicos de un conjunto de datos. Veámoslo en un ejemplo práctico en el siguiente [vídeo](https://www.youtube.com/watch?v=jbkSRLYSojo).
