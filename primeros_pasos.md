@@ -60,6 +60,8 @@ o lo que es lo mismo:
 
 `print(state.x77)`
 
+![table](img/table.png)
+
 Ambos inputs nos devuelven la tabla completa con los datos demográficos de los diferentes estados de EEUU que vamos a trabajar.
 
 Para inspeccionar una tabla utilizaremos una serie de funciones básicas que se usan muy frecuentemente en R.
