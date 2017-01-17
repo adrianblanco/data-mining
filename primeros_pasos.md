@@ -70,7 +70,6 @@ Por ejemplo, para tener unas primeras nociones de qué datos contiene la tabla y
 
 [scatter]: img/scatter.png "scatter example"
 
-
 Algo más avanzado:
 
 ```
