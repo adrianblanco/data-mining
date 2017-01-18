@@ -54,7 +54,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-![scatterplot](img/scatterggplot2.png)
+![scatterplot](img/scatterggplot2.png width=220)
 
 Otro modo de expresarlo es:
 
