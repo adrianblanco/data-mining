@@ -18,7 +18,7 @@ Recuerda, en caso de duda:
 
 ==============
 
-#### Para saber más...
+### Para saber más...
 ggplot2 es un paquete desarrollado por Hadley Wickham y Winston Chang.
 
 Una primera referencia de este paquete es [la documentación de ggplot2](http://docs.ggplot2.org/current/).
@@ -35,7 +35,7 @@ o lo que es lo mismo:
 
 `print(state.x77)`
 
-Una primera aproximación a los datos puede ser analizar cómo se relacionan dos variables presentes en el conjunto como son XXXX y XXXX. Para ello, realizamos la siguiente operación:
+Una primera aproximación a los datos puede ser analizar cómo se relacionan dos variables presentes en el conjunto como son esperanza de vida y XXXX. Para ello, realizamos la siguiente operación:
 
 `data(state)
 states.data <- as.data.frame(state.x77)
@@ -54,7 +54,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-![scatterplot](https://github.com/adrianblanco/data-mining/blob/master/img/scatterggplot2.png | width=200)
+![scatterplot](img/scatterggplot2.png | width=200)
 
 Otro modo de expresarlo es:
 
