@@ -56,8 +56,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-<img src="img/scatterggplot2.png" alt="alt text" width="200">
-![scatterplot](img/scatterggplot2.png size=200)
+<img src="img/scatterggplot2.png" alt="alt text" width="500">
 
 Otro modo de expresarlo es:
 
@@ -75,7 +74,7 @@ Aunque ya podemos realizar un rápido análisis de los datos, desconocemos a qu�
            geom_point() +
         geom_text(aes(label = states), size=5)`
 
-![scatterplot con labels](img/scatterlabels.png)
+<img src="img/scatterlabels.png" alt="alt text" width="500">
 
 Con los nombres en cada uno de los puntos, podemos analizar los datos de forma sencilla. Aunque todavía nos es un poco complejo por el tamaño del texto. Para verlo más claro podemos añadir un argumento a geom_text y reducir el tamaño del texto. Se haría así `geom_text(aes(label = states), size=3)`.
 
@@ -109,7 +108,7 @@ Para empezar, vamos a realizar una selección de los datos:
 
 `four.states <- states.data[states.data$states == "California" | states.data$states == "New York" | states.data$states == "Texas" | states.data$states == "Alabama", ]`
 
-![bargraph](img/bargraph.png)
+<img src="img/bargraph.png" alt="alt text" width="500">
 
 Una vez transformada la tabla, escribimos los argumentos para visualizarla:
 
