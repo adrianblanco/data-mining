@@ -29,7 +29,11 @@ Un libro muy recomendable para iniciarse en ggplot2, apropiado para el análisis
 
 Recordemos cómo cargabamos los datos
 
-Copia y pega
+`state.x77`
+
+o lo que es lo mismo:
+
+`print(state.x77)`
 
 Una primera aproximación a los datos puede ser analizar cómo se relacionan dos variables presentes en el conjunto como son XXXX y XXXX. Para ello, realizamos la siguiente operación:
 
@@ -50,6 +54,8 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
+![scatterplot]()
+
 Otro modo de expresarlo es:
 
 `ggplot(data = states.data,
@@ -65,6 +71,8 @@ Aunque ya podemos realizar un rápido análisis de los datos, desconocemos a qu�
            y = Life.Exp)) +
            geom_point() +
         geom_text(aes(label = states), size=5)`
+
+![scatterplot con labels]()
 
 Con los nombres en cada uno de los puntos, podemos analizar los datos de forma sencilla. Aunque todavía nos es un poco complejo por el tamaño del texto. Para verlo más claro podemos añadir un argumento a geom_text y reducir el tamaño del texto. Se haría así `geom_text(aes(label = states), size=3)`.
 
@@ -97,6 +105,8 @@ Ya hemos invertido suficiente tiempo en los gráficos de dispersión o scatterpl
 Para empezar, vamos a realizar una selección de los datos:
 
 `four.states <- states.data[states.data$states == "California" | states.data$states == "New York" | states.data$states == "Texas" | states.data$states == "Alabama", ]`
+
+![bargraph]()
 
 Una vez transformada la tabla, escribimos los argumentos para visualizarla:
 
