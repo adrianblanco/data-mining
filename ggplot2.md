@@ -106,7 +106,7 @@ Para empezar, vamos a realizar una selección de los datos:
 
 `four.states <- states.data[states.data$states == "California" | states.data$states == "New York" | states.data$states == "Texas" | states.data$states == "Alabama", ]`
 
-![bargraph]()
+![bargraph](https://github.com/adrianblanco/data-mining/blob/master/img/bargraph.png)
 
 Una vez transformada la tabla, escribimos los argumentos para visualizarla:
 
