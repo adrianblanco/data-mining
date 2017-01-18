@@ -35,7 +35,7 @@ o lo que es lo mismo:
 
 `print(state.x77)`
 
-Una primera aproximación a los datos puede ser analizar cómo se relacionan dos variables presentes en el conjunto como son esperanza de vida y XXXX. Para ello, realizamos la siguiente operación:
+Una primera aproximación a los datos puede ser analizar cómo se relacionan dos variables presentes en el conjunto como son esperanza de vida e ingresos. Para ello, realizamos la siguiente operación:
 
 `data(state)
 states.data <- as.data.frame(state.x77)
@@ -54,7 +54,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-![scatterplot](img/scatterggplot2.png | width=200)
+![scatterplot](img/scatterggplot2.png)
 
 Otro modo de expresarlo es:
 
