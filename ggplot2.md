@@ -56,7 +56,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-![scatterplot](img/scatterggplot2.png)
+![scatterplot](img/scatterggplot2.png size=200 {width=40px)
 
 Otro modo de expresarlo es:
 
@@ -141,7 +141,7 @@ Para realizar el análisis de datos, utilizaremos de nuevo la librería ggplot2.
 
 ```
 
-lee <- read.csv(file="c:/Users/ablanco/Documents/rgraph/elecciones_galicia_euskadi.csv", header=T, sep=",")
+lee <- read.csv(file="c:/Users/ablanco/Documents/rgraph/elecciones_euskadi_galicia_16.csv", header=T, sep=",")
 
 visualiza <- ggplot(lee, aes(x=mediana, y=porcentaje_voto, color=partido)) + geom_point() + scale_x_continuous(limits=c(35,62)) + scale_y_continuous(limits=c(0,80)) + facet_grid (~ partido) 
 
