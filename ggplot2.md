@@ -29,11 +29,11 @@ Un libro muy recomendable para iniciarse en ggplot2, apropiado para el análisis
 ==============
 
 
-Recordemos cómo cargabamos los datos
+Recordemos cómo cargábamos los datos
 
 `state.x77`
 
-o lo que es lo mismo:
+O lo que es lo mismo:
 
 `print(state.x77)`
 
@@ -56,7 +56,7 @@ Si queremos añadir un título al gráfico:
 
 `qplot(Income, Life.Exp, data = states.data, main = "Ingresos vs Esperanza de vida")`
 
-![scatterplot](img/scatterggplot2.png =200x)
+![scatterplot](img/scatterggplot2.png)
 
 Otro modo de expresarlo es:
 
@@ -74,7 +74,7 @@ Aunque ya podemos realizar un rápido análisis de los datos, desconocemos a qu�
            geom_point() +
         geom_text(aes(label = states), size=5)`
 
-![scatterplot con labels](https://github.com/adrianblanco/data-mining/blob/master/img/scatterlabels.png | width=200)
+![scatterplot con labels](img/scatterlabels.png)
 
 Con los nombres en cada uno de los puntos, podemos analizar los datos de forma sencilla. Aunque todavía nos es un poco complejo por el tamaño del texto. Para verlo más claro podemos añadir un argumento a geom_text y reducir el tamaño del texto. Se haría así `geom_text(aes(label = states), size=3)`.
 
@@ -108,7 +108,7 @@ Para empezar, vamos a realizar una selección de los datos:
 
 `four.states <- states.data[states.data$states == "California" | states.data$states == "New York" | states.data$states == "Texas" | states.data$states == "Alabama", ]`
 
-![bargraph](https://github.com/adrianblanco/data-mining/blob/master/img/bargraph.png =200px)
+![bargraph](img/bargraph.png)
 
 Una vez transformada la tabla, escribimos los argumentos para visualizarla:
 
@@ -129,7 +129,7 @@ Para comprobar que está todo en orden, inspeccionamos las primeras filas de nue
 
   `head(mis_datos[1:5])`
 
-Veámoslo con un ejemplo real como es el análisiis de los datos de las últimas elecciones gallegas y vascas. Dicho análisis y posterior visualización de datos está publicado en El Confidencial en el artículo ["Gallego y euskera, el voto nacionalista no siempre habla su idioma"](
+Veámoslo con un ejemplo real como es el análisis de los datos de las últimas elecciones gallegas y vascas. Dicho análisis y posterior visualización de datos está publicado en El Confidencial en el artículo ["Gallego y euskera, el voto nacionalista no siempre habla su idioma"](
 http://www.elconfidencial.com/espana/2016-10-02/elecciones-galicia-pais-vasco-resultados-analisis-voto-idioma-edad_1268665/).
 
 Primer descargamos los datos en formato .csv de [este gist o enlace] (https://gist.github.com/adrianblanco/c4fe8925e6ae9cae962d24f4742f83eb).
@@ -155,10 +155,8 @@ economist <- + theme_economist() + scale_colour_economist()
 ```
 
 
+=============
 
-
-
+### Un último apunte...
 
 Por último, y ahora que hemos visto cómo trabajar con nuestros propios datos, es importante tener en cuenta que no siempre debemos guiarnos por nuestra primera intuición o por los datos que tengamos más a mano. Para muestra [este vídeo](https://www.youtube.com/watch?v=N8Votwxx8a0) que ofrece alternativas a unos datos utilizados en todos los informes, redacciones, estudios económicos, etc. del mundo y que, en muchos casos, no nos hemos parado a valorar si son los adecuados o correctos.
-
-
