@@ -16,6 +16,7 @@ Recuerda, en caso de duda:
 
 `?ggplot2`
 
+
 ==============
 
 ### Para saber más...
@@ -26,6 +27,7 @@ Una primera referencia de este paquete es [la documentación de ggplot2](http://
 Un libro muy recomendable para iniciarse en ggplot2, apropiado para el análisis y la visualización de los datos, es [Elegant Graphics for Data Analysis](http://moderngraphics11.pbworks.com/f/ggplot2-Book09hWickham.pdf).
 
 ==============
+
 
 Recordemos cómo cargabamos los datos
 
@@ -106,7 +108,7 @@ Para empezar, vamos a realizar una selección de los datos:
 
 `four.states <- states.data[states.data$states == "California" | states.data$states == "New York" | states.data$states == "Texas" | states.data$states == "Alabama", ]`
 
-![bargraph](https://github.com/adrianblanco/data-mining/blob/master/img/bargraph.png | width=200)
+![bargraph](https://github.com/adrianblanco/data-mining/blob/master/img/bargraph.png =200)
 
 Una vez transformada la tabla, escribimos los argumentos para visualizarla:
 
@@ -134,6 +136,9 @@ Primer descargamos los datos en formato .csv de [este gist o enlace] (https://gi
 
 Para realizar el análisis de datos, utilizaremos de nuevo la librería ggplot2. El código, que iremos desmenuzando en clase, es el siguiente:
 
+
+
+
 ```
 
 lee <- read.csv(file="c:/Users/ablanco/Documents/rgraph/elecciones_galicia_euskadi.csv", header=T, sep=",")
@@ -148,6 +153,9 @@ economist <- + theme_economist() + scale_colour_economist()
 
 
 ```
+
+
+
 
 
 
