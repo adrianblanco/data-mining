@@ -43,7 +43,7 @@ Una primera aproximación a los datos puede ser analizar cómo se relacionan dos
 data(state)
 states.data <- as.data.frame(state.x77)
 states.data$states <- rownames(states.data)
-colnames(states.data)[4] <- "Life.Exp"`
+colnames(states.data)[4] <- "Life.Exp"
 ```
 
 Aunque no lo vemos, hemos estructurado los datos. Es importante tener en cuenta la modificación en el nombre de una de las columnas "Life Exp" columnas que hemos realizado para poder visualizar los datos `colnames(states.data)[4] <- "Life.Exp"`.
