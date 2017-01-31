@@ -1,4 +1,4 @@
-### Extracción, transformación y análisis de datos
+## Extracción, transformación y análisis de datos
 
 En primer lugar instalamos el paquete rvest que nos permite, entre otras cosas, scrapear tablas publicadas en páginas web:
 
