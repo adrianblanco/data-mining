@@ -69,3 +69,5 @@ ggplot(data = filtro,
 ```
 
 Obtendremos un resultado similar a éste:
+
+<img src="img/stack.png" alt="alt text" width="500">
