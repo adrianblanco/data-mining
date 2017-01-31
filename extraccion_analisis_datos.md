@@ -44,7 +44,7 @@ Cuando esté instalado, cargamos la librería:
 Si queremos renombrar alguna de las columnas o variables de la base de datos, utilizamos la función `rename`.
 
 ```
-renombrar <- rename(data, c("Religion"="religion", "Percentage"="porcentaje"))
+renombrar <- rename(seleccionar, c("Religion"="religion", "Percentage"="porcentaje"))
 ```
 
 Para comprobar que lo hemos hecho bien escribimos `renombrar`
