@@ -1,9 +1,8 @@
 ### Gráficos como guía para el análisis de datos
 
-##### Algunos ejemplos
 
 
-* ###### Chart Suggiestion
+###### Chart Suggestion
 Esquema creado por Andrew Abela
 
 <img src="img/Andrew_Abela.png" alt="alt text" width="500">
@@ -12,7 +11,7 @@ Fuente: [Andrew Abela](http://www.verstaresearch.com/blog/how-to-select-the-type
 
 Esquema en [.pdf](https://img.labnol.org/di/choosing_a_good_chart2.pdf)
 
-* ###### Visual Vocabulary
+###### Visual Vocabulary
 
 <img src="img/Visual_Vocabulary.png" alt="alt text" width="500">
 
@@ -20,7 +19,7 @@ Fuente: [FT](https://github.com/ft-interactive/chart-doctor/blob/master/visual-v
 
 Versión [interactiva](http://ft-interactive.github.io/visual-vocabulary/)
 
-* ###### Graphic Continuum
+###### Graphic Continuum
 
 <img src="img/Graphic_continuum.png" alt="alt text" width="500">
 
