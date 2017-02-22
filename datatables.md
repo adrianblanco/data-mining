@@ -10,7 +10,7 @@ Aquí está el código de Datatables, que mezcla HTML, CSS y Javascript, con el 
 
 [https://github.com/adrianblanco/data-mining/tree/master/datatables](https://github.com/adrianblanco/data-mining/tree/master/datatables)
 
-Veamos paso a paso en el HTML cómo hemos construido la tabla.
+Veamos a ver paso a paso en el código HTML comentado cómo hemos construido la tabla.
 
 Para visualizar la tabla y trabajar con los datos en nuestro navegador, vamos a montar un servidor con [Python](https://www.python.org). Por tanto, primero tenemos que tener instalado Python en nuestro ordenador. Si no está instalado, podéis decargarlo de [aquí](https://www.python.org/downloads/windows/)   Para ello, abrimos la línea de comandos (Shell en Windows o Terminal en Mac).
 
@@ -26,4 +26,4 @@ En cambio, si tenemos instalado Python 3, escribimos:
 
 Una vez instalado, vamos a la siguiente url `http://localhost:8000` donde aparecerá la tabla.
 
-<img src="img/datatables.png" alt="alt text" width="700">
+<img src="img/datatables.png" alt="alt text" width="800">
