@@ -1,0 +1,99 @@
+<!--Creamos un documento HTML-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de deudores</title>
+
+    <!--Librerías js necesarias para que Datatables funcione-->
+    <script type="text/javascript" language="javascript" src="../lib/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../lib/d3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../lib/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../lib/dataTables.buttons.min.js"></script>
+    
+    <!--Abrimos un script dentro del HTML donde escribiremos el código Javascript-->
+    <script type="text/javascript" class="init">
+    // Carga el fichero csv con el queremos trabajar
+        d3.csv("../data/deudores.csv", function(data) {
+            // Verificamos que carga los datos en la Consola
+            console.log(data);
+            // Función para seleccionar los datos
+            dataset = data.map(function(d) {
+                                return {
+                                    "Deudor": d["Deudor"],
+                                    "Tipo": d["Tipo"],
+                                    "Diferencia": d["Diferencia"],
+                                    "Importe": d["Importe"]
+                                };
+            });
+            // Verificamos que carga los datos en la Consola
+            console.log(dataset);
+
+            // Funciones que nos permiten modificar características de nuestra tabla como las columnas, el número de páginas, etc
+            $(document).ready(function() {
+                $('#example').DataTable( {
+                    "data": dataset,
+                    "order": [[ 3, "asc" ]],
+                    "lengthMenu": [ [20, 40, 80, -1], [20, 40, 80, "All"] ],
+                    "pageLength": 10,
+                    columns: [
+                                { data: 'Deudor' },
+                                { data: 'Tipo' },
+                                { data: 'Diferencia' },
+                                { data: 'Importe' }
+                            ]
+                } );
+            } );
+        });
+$('#example').dataTable( {
+  "columnDefs": [
+    { className: "my_class", "targets": [ 3 ] }
+  ]
+} );
+    </script>
+
+    <!--Cargamos los estilos css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css">
+    <style>
+    .dataTables_wrapper {
+    font-family: arial;
+    font-size: 12px;
+    /* direction: rtl;
+    position: relative; */
+    clear: both;
+    *zoom: 1;
+    zoom: 1;
+    text-align: left;
+    text-align:;
+}
+    #container {
+     font-family: arial;
+     text-align: left;     
+    }
+
+    #my_class {
+        text-align: right;
+    }
+
+    </style>
+</head>
+
+<!--Regresamos al HTML para acabar de definir algunos valores de nuestra tabla -->
+
+<body>
+  <div id="container">
+  <h1>Lista de deudores</h1>
+    <table id="example" class="display" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th>Deudor</th>
+          <th>Tipo</th>
+          <th>Diferencia</th>
+          <th>Importe</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</body>
+</html>
