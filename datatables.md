@@ -2,11 +2,11 @@
 
 En ocasiones para analizar un conjunto de datos muy grande tenemos que trabajar con tablas que, de forma fluida, carguen esos datos. Una solución para ello es Datatables.
 
-```
+=============================
 ### ¿Qué es Datatables?
 
 [Datatables](https://datatables.net) es un complemento de jQuery (librería de Javascript) que permite añadir funcionalidades avanzadas a cualquier tabla HTML. Entre éstas funciones destacan el filtrado, la ordenacioón y la edición de datos
-```
+=============================
 
 Aquí está el código de Datatables, que mezcla HTML, CSS y Javascript, con el que vamos a trabajar:
 
