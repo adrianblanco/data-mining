@@ -8,7 +8,7 @@ En ocasiones para analizar un conjunto de datos muy grande tenemos que trabajar 
 
 Aquí está el código de Datatables, que mezcla HTML, CSS y Javascript, con el que vamos a trabajar:
 
-ENLACE
+[https://github.com/adrianblanco/data-mining/tree/master/datatables](https://github.com/adrianblanco/data-mining/tree/master/datatables)
 
 Veamos paso a paso en el HTML cómo hemos construido la tabla.
 
@@ -26,4 +26,4 @@ En cambio, si tenemos instalado Python 3, escribimos:
 
 Una vez instalado, vamos a la siguiente url `http://localhost:8000` donde aparecerá la tabla.
 
-<img src="img/datatables.png" alt="alt text" width="500">
+<img src="img/datatables.png" alt="alt text" width="700">
