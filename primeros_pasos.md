@@ -4,8 +4,6 @@ Master de Periodismo de datos
 
 Universidad de Villanueva
 
-Curso 2016-2017
-
 ## ¿Qué es R?
 
 “R es un lenguaje y un entorno de programación para el desarrollo de operaciones estadísticas y visualizaciones"
