@@ -25,7 +25,7 @@ Una vez instalado, tenemos que cargar el paquete o librería previamente a utili
 En R, la ayuda de una función (summary en el ejemplo siguiente), se consulta así:
 
 `?_función_`
-`help( _nombredelpaquete_ )``
+`help( _nombredelpaquete_ )`
 
 Si usas RStudio, el texto de la ayuda correspondiente a esa función aparecerá en la pestaña correspondiente del panel inferior derecho.
 
@@ -70,7 +70,14 @@ Por ejemplo, para tener unas primeras nociones de qué datos contiene la tabla y
 
 ![scatter](img/scatter.png)
 
-Algo más avanzado:
+De momento la visualiación (scatter plot) no nos dice. ¿Y si queremos sustituir cada uno de los puntos por las iniciales de cada estado? De esta forma, podremos extraer las primeras conclusiones:
+
+```
+plot(state.x77)
+text(state.x77,state.abb)
+```
+
+También podemos crear algo más avanzado (es solo un ejemplo, nada de 😥😱):
 
 ```
 plot(as.integer(state.region), state.x77[,1], ylab='Population',
