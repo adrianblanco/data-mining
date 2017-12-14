@@ -16,10 +16,12 @@ Asociamos el link o url a la variable `url`:
 
 Una vez hecho eso, escribimos el código que nos va a permitir seleccionar y extraer los datos de la tabla que queremos procesar:
 
+`Copy XPath`
+
 ```
 websites <- url %>%
 read_html() %>%
-html_nodes(xpath='//*[@id="mw-content-text"]/table[2]') %>%
+html_nodes(xpath='//*[@id="mw-content-text"]/div/table[2]') %>%
 html_table()
 ```
 
